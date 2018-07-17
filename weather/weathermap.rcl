@@ -1,0 +1,2 @@
+## get for location
+GET https://api.openweathermap.org/data/2.5/weather?q=den bosch&appid=c7da24463018a4fac7ef78ddc1941e81
