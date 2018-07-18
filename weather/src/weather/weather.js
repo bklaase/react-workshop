@@ -30,9 +30,9 @@ class Weather extends Component {
         <br />
         <button id='btnConfirm'
                 onClick={() => this.fetchWeatherForLocation(this.state.location)}>Confirm!</button>
-        <p>
+        <div>
         <h3>Weather details for: {this.state.location}</h3>
-        </p>
+        </div>
         <WeatherDetails summary={this.state.weatherSummary}></WeatherDetails>
       </div>
     );

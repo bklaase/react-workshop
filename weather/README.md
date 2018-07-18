@@ -1,5 +1,5 @@
 # React openweather api exercise
-This is a very redumentary react app, bootstrapped with the "create-react-app" cli tool.
+This is a very rudimentary react app, bootstrapped with the "create-react-app" cli tool.
 
 ## TODO
 - [x] Retrieve weather for a location based on usercontrol
