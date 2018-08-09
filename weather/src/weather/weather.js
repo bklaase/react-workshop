@@ -27,13 +27,13 @@ class Weather extends Component {
           <p>Please enter a location and click "Confirm!", or press enter to see its weather summary</p>
           <input type='text' id='tbLocation'
                  onChange={evt => this.setState({location:evt.target.value})}
-              onKeyPress={evt => {if(evt.key === 'Enter') this.fetchWeatherForLocation(this.state.location);}}
+                 onKeyPress={evt => {if(evt.key === 'Enter') this.fetchWeatherForLocation(this.state.location);}}
               />
           <br />
           <br />
             <button id='btnConfirm'
                     onClick={() => this.fetchWeatherForLocation(this.state.location)}
-                style={{visibility: settings.controls ? 'visible' : 'hidden'}}>Confirm! </button>
+                    style={{visibility: settings.controls ? 'visible' : 'hidden'}}>Confirm! </button>
           <div>
           <h3>Weather details for: {this.state.location}</h3>
           </div>
