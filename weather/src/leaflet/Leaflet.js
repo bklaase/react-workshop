@@ -5,14 +5,22 @@ class Leaflet extends Component {
  state = {
     hasLocation: false,
     latlng: {
-      lat: 51.505,
-      lng: -0.09,
+      lat: 51.58,
+      lng: 6.02,
     },
   }
 
   mapRef = createRef()
 
-  handleClick = () => this.mapRef.current.leafletElement.locate()
+  handleClick = () => {
+    if(this.state.hasLocation) {
+
+      console.log(this.state.latlng);
+      this.mapRef.current.leafletElement.flyTo({lat: 52.72, lng: 5.36}); //crashes
+    }
+    else
+      this.mapRef.current.leafletElement.locate();
+  }
 
   handleLocationFound = e => {
     this.setState({
@@ -32,7 +40,7 @@ class Leaflet extends Component {
 
     return (
       <Map
-        style={{height:'200px'}}
+        style={{height:'600px'}}
         center={this.state.latlng}
         length={4}
         onClick={this.handleClick}

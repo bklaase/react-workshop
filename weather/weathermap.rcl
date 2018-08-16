@@ -1,2 +1,8 @@
 ## get for location
-GET https://api.openweathermap.org/data/2.5/weather?q=den bosch&appid=c7da24463018a4fac7ef78ddc1941e81
+GET https://api.openweathermap.org/data/2.5/weather?appid=c7da24463018a4fac7ef78ddc1941e81&q=den bosch&lang=nl
+
+## use coordinates
+GET https://api.openweathermap.org/data/2.5/weather?appid=c7da24463018a4fac7ef78ddc1941e81&lon=6.02&lat=51.58
+
+## forcasting
+GET https://api.openweathermap.org/data/2.5/forecast?q=rosmalen&appid=c7da24463018a4fac7ef78ddc1941e81&lang=nl
