@@ -16,7 +16,7 @@ class Leaflet extends Component {
     if(this.state.hasLocation) {
 
       console.log(this.state.latlng);
-      this.mapRef.current.leafletElement.flyTo({lat: 52.72, lng: 5.36}); //crashes
+      this.mapRef.current.leafletElement.flyTo({lat: 51.72, lng: 5.36}); //crashes
     }
     else
       this.mapRef.current.leafletElement.locate();
@@ -33,7 +33,7 @@ class Leaflet extends Component {
     const marker = this.state.hasLocation ? (
       <Marker position={this.state.latlng}>
         <Popup>
-          <span>You are here</span>
+          <span>Hier ben je nu!</span>
         </Popup>
       </Marker>
     ) : null;
